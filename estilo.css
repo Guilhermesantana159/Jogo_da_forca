@@ -1,20 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 div#nav-bar{
-    margin: auto;
-    background-color: white;
-    height: 60pt;
-    border-radius: 5pt;
     width: 100%;
-    margin-top: -35pt;
-    padding: ;
-
+    display: flex;
+    position: fixed;
+    background-color: rgb(240, 34, 34);
+    z-index: 99;
+    height: 80pt;
+    box-shadow: 2px 2px 2px 1px black;
     
 }
 body{
-    background-color: rgb(218, 214, 214);
+    background-color: rgb(235, 231, 231);
     padding: 0pt;
     margin: 0pt;
+   
 }
 h1{
-    font-size: 50pt;
-    color: rgb(34, 32, 32);
+    margin: auto 20px auto 480px;
+    font-weight: bold;
+    font-size: 60pt;
+    font-family: 'Chela One', cursive;
+    color: white;
+    text-shadow: 2pt 2pt 2pt  black;
+}
+footer#rodape{
+    background-color: rgb(194, 194, 194);
+    width: 100%;
+    height: 40pt;
+    position: absolute;
+    bottom: 0pt;
+    box-shadow: 2pt 2pt 2pt 2pt grey;
+}
+td{
+    padding-left: 5pt;
+    padding-right: 10pt;
+    font-weight: bolder;
+    font-family: 'Chela One', cursive;
+    font-size: 20pt;
+    text-shadow: 1t 1pt 1pt white;
+}
+table{
+    margin-left: 50pt;
+    margin-top: 5pt;
+}
+input#enviar{
+    display: block;
+    position: absolute;
+    top: 410pt;
+    left: 160pt;
+}
+input#nova{
+    position: absolute;
+    top: 400pt;
+    left: 300pt;
+
+}
+input.botao{
+    font-size: 15pt;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    font-weight: bold;
+    background-color: white;
+    border-style: solid;
+    border-width: 3pt;
+    border-color: blue;
+    border-radius: 5pt;
+    padding: 6pt;
+    cursor: pointer;
+}
+input.botao:hover{
+    transition: 1s;
+    background-color: blue;
+    color: white;
+    text-shadow: 1pt 1pt 1pt black;
 }
