@@ -1,0 +1,20 @@
+div#nav-bar{
+    margin: auto;
+    background-color: white;
+    height: 60pt;
+    border-radius: 5pt;
+    width: 100%;
+    margin-top: -35pt;
+    padding: ;
+
+    
+}
+body{
+    background-color: rgb(218, 214, 214);
+    padding: 0pt;
+    margin: 0pt;
+}
+h1{
+    font-size: 50pt;
+    color: rgb(34, 32, 32);
+}
