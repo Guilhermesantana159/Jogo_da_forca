@@ -53,7 +53,7 @@ input#enviar{
 input#nova{
     position: absolute;
     top: 400pt;
-    left: 300pt;
+    left: 600pt;
 
 }
 input.botao{
@@ -74,4 +74,104 @@ input.botao:hover{
     background-color: blue;
     color: white;
     text-shadow: 1pt 1pt 1pt black;
+}
+div#boneco{
+    position: absolute;
+    height: 330pt;
+    width: 280pt;
+    background-color: white;
+    top: 100pt;
+    left: 720pt;
+    border-radius: 10pt;
+    border-width: 3pt;
+    border-color: navy;
+    border-style: solid;
+}
+div#base-forca{
+    background-color: rgb(94, 31, 3);
+    width: 70pt;
+    height: 10pt;
+    position: absolute;
+    border-radius: 2pt;
+    top: 320pt;
+    left: 200pt;
+}
+div#lastro-forca{
+    position: absolute;
+    height: 280pt;
+    width: 10pt;
+    background-color: rgb(94, 31, 3);
+    top: 45pt;
+    left: 250pt;
+}
+div#corda{
+    position: absolute;
+    width: 160pt;
+    height: 10pt;
+    border-radius: 5pt;
+    background-color: rgb(94, 31, 3);
+    top: 35pt;
+    left: 110pt;
+
+
+}
+img#cabeça{
+    position: relative;
+    width: 100pt;
+    height: 100pt;
+    top: 45pt;
+    left: 80pt;
+}
+img#braço-d{
+    position: absolute;
+    top: 142pt;
+    left: 128pt;
+    height: 40pt;
+    width: 40pt;
+   
+    
+}
+img#braço-e{
+    position: absolute;
+    top: 143pt;
+    left: 88pt;
+    height: 40pt;
+    width: 40pt;
+   
+}
+img#corpo{
+    position: absolute;
+    height: 70pt;
+    width: 61pt;
+    top: 159pt;
+    left: 96pt;
+ 
+}
+img#perna-e{
+    position: absolute;
+    height: 30pt;
+    width: 30pt;
+    top: 225pt;
+    left: 100pt;
+}
+img#perna-d{
+    position: absolute;
+    height: 30pt;
+    width: 30pt;
+    top: 222pt;
+    left: 130pt;
+}
+input#resposta{
+    position: absolute;
+    top: 360pt;
+    left: 20pt;
+    width: 80pt;
+    height: 80pt;
+    border-radius: 20pt;
+    font-size: 60pt;
+    padding-left: 40pt;
+    font-weight: bolder;
+    box-shadow: 1pt 1pt 1pt 1pt black;
+    border-color: blue;
+    border-style: double;
 }
