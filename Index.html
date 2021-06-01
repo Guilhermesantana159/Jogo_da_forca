@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Jogo da Forca</title>
 </head>
-<body>
+<body onload="seleção()">
     <header>
         <div id="nav-bar">
             <h1>Jogo da Forca</h1>
@@ -25,13 +25,32 @@
             <div id="lastro-forca"></div>
             <div id="corda"></div>
         </div>
-        <input type="text" id="resposta" maxlength="1">
-        <input type="button" class="botao" id="nova" value="Nova Palavra">
-        <input type="button" class="botao" id="enviar" value="Enviar">
+        <div id="comandos">
+            <input type="text" id="resposta" maxlength="1">
+            <input type="button" class="botao" id="nova" value="Nova Palavra" onclick="seleção()">
+            <input type="button" class="botao" id="enviar" value="Enviar" onclick="enviar()">
+            <input type="button" class="botao" value="Dica" id="dica" onclick="dica()">
+        </div>
+        <div id="texto-dica"></div>
+        <div id="letras">
+            <input type="text" readonly id="0" class="letra">
+            <input type="text" readonly id="1" class="letra">
+            <input type="text" readonly id="2" class="letra">
+            <input type="text" readonly id="3" class="letra">
+            <input type="text" readonly id="4" class="letra">
+            <input type="text" readonly id="5" class="letra">
+            <input type="text" readonly id="6" class="letra">
+            <input type="text" readonly id="7" class="letra">
+            <input type="text" readonly id="8" class="letra">
+            <input type="text" readonly id="9" class="letra">
+            <input type="text" readonly id="10" class="letra">
+            <input type="text" readonly id="11" class="letra">
+            <input type="text" readonly id="12" class="letra">       
+        </div>    
     </main>
     <footer id="rodape">
         <table>
-            <tr><td>Nome:</td><td id="nome"></td><td>Pontuação:</td><td id="pontuação"></td><td>Letras Usadas:</td><td id="letras"></td></tr>
+            <tr><td>Nome:</td><td id="nome" class="direito"></td><td>Pontuação:</td><td id="pontuação" class="direito" >0</td><td>Letras Usadas:</td><td id="letras-erradas" class="direito"></td></tr>
         </table>        
     </footer>
     

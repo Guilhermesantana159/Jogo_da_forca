@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 div#nav-bar{
     width: 100%;
     display: flex;
@@ -34,7 +35,7 @@ footer#rodape{
 }
 td{
     padding-left: 5pt;
-    padding-right: 10pt;
+    padding-right: 5pt;
     font-weight: bolder;
     font-family: 'Chela One', cursive;
     font-size: 20pt;
@@ -48,7 +49,7 @@ input#enviar{
     display: block;
     position: absolute;
     top: 410pt;
-    left: 160pt;
+    left: 140pt;
 }
 input#nova{
     position: absolute;
@@ -79,7 +80,7 @@ div#boneco{
     position: absolute;
     height: 330pt;
     width: 280pt;
-    background-color: white;
+    background-image: url("imagens/floresta.jpg");
     top: 100pt;
     left: 720pt;
     border-radius: 10pt;
@@ -124,54 +125,105 @@ img#cabeça{
 }
 img#braço-d{
     position: absolute;
-    top: 142pt;
-    left: 128pt;
-    height: 40pt;
-    width: 40pt;
+    top: 141pt;
+    left: 155pt;
+    height: 60pt;
+    width: 30pt;
    
-    
+      
 }
 img#braço-e{
     position: absolute;
-    top: 143pt;
-    left: 88pt;
-    height: 40pt;
-    width: 40pt;
+    top: 142pt;
+    left: 75pt;
+    height: 60pt;
+    width: 25pt;
    
 }
 img#corpo{
     position: absolute;
     height: 70pt;
     width: 61pt;
-    top: 159pt;
-    left: 96pt;
+    top: 145pt;
+    left: 98pt;
  
 }
 img#perna-e{
     position: absolute;
     height: 30pt;
     width: 30pt;
-    top: 225pt;
-    left: 100pt;
+    top: 210pt;
+    left: 102pt;
 }
 img#perna-d{
     position: absolute;
     height: 30pt;
     width: 30pt;
-    top: 222pt;
-    left: 130pt;
+    top: 208pt;
+    left: 128pt;
 }
 input#resposta{
     position: absolute;
-    top: 360pt;
-    left: 20pt;
-    width: 80pt;
-    height: 80pt;
-    border-radius: 20pt;
-    font-size: 60pt;
-    padding-left: 40pt;
+    top: 380pt;
+    left: 50pt;
+    height: 40pt;
+    width: 30pt;
+    border-radius: 10pt;
+    font-size: 40pt;
+    padding: 10pt 10pt 10pt 20pt;
     font-weight: bolder;
     box-shadow: 1pt 1pt 1pt 1pt black;
     border-color: blue;
     border-style: double;
+}
+input.letra{
+    display: inline-block;
+    width: 30pt;
+    height: 40pt;
+    border-radius: 5pt;
+    padding-left: 10pt;
+    box-shadow: 1px 1px 1px 1px black;
+    margin-left: 5pt;
+    opacity: 0;
+    font-weight: bolder;
+    padding-left: 15pt;
+    font-size: 25pt;
+    font-family: 'Chela One', cursive;
+
+}
+div#letras{
+    position: absolute;
+    top: 150pt;
+    left: 10pt;
+}
+div#texto-dica{
+    position: absolute;
+    top: 350pt;
+    left: 350pt;
+    width: 150pt;
+    border-radius: 5pt;
+    background-color: black;
+    background-color: white;
+    border-style: dotted;
+    border-color: rgb(68, 68, 230);
+    border-width: 3pt;
+    padding: 10pt 10pt 10pt 15pt;
+    font-size: 15pt;
+    font-weight: bolder;
+    font-family: 'Chela One', cursive;
+    opacity: 0;
+}
+input#dica{
+    position: absolute;
+    top: 400pt;
+    left: 540pt;
+}
+td.direito{
+    font-size: 25pt;
+    color: blue;
+    text-shadow: 1pt 1pt 1pt white;
+    font-family: 'Squada One', cursive;
+}
+img{
+    opacity: 0;
 }
