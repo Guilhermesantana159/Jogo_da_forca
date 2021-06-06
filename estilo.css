@@ -150,17 +150,17 @@ img#corpo{
 }
 img#perna-e{
     position: absolute;
-    height: 30pt;
-    width: 30pt;
-    top: 210pt;
-    left: 102pt;
+    height: 40pt;
+    width: 40pt;
+    top: 205pt;
+    left: 97pt;
 }
 img#perna-d{
     position: absolute;
-    height: 30pt;
-    width: 30pt;
-    top: 208pt;
-    left: 128pt;
+    height: 40pt;
+    width: 40pt;
+    top: 205pt;
+    left: 127pt;
 }
 input#resposta{
     position: absolute;

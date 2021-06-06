@@ -1,5 +1,5 @@
 var palavras = ["teclado","monitor","controle","computador","impressora","ferrari","compass",
-"mustang","bugati","Koenigsegg","Lamborghini","banana","morango","abacate","melancia","geladeira","relogio","camisa","lapiseira","caneta"];
+"mustang","bugati","koenigsegg","Lamborghini","banana","morango","abacate","melancia","geladeira","relogio","camisa","lapiseira","caneta"];
 var descrição = ["Dispositivo de entrada/saida do computador","Dispositivo de entrada/saida do computador","Item usado em um videogame","Item tecnológico","Utiliza papel para funcionar","Marca de carro","Carro da marca jeep","Carro da marca Ford","Marca de carro","Marca de carro",
 "Marca de carro","Uma fruta","Sabor de trento","Uma fruta","Umaa fruta","Um eletrodoméstico",
 "Usado no pulso","Vestuário","Utilizado para escrever","Utilizado para escrever"];
@@ -38,7 +38,7 @@ function dica(){
 }
 
 function enviar(){
-    let resposta_aluno = String(document.getElementById("resposta").value);
+    let resposta_aluno = String(document.getElementById("resposta").value).toLowerCase();
     let z = palavras[pos].search(resposta_aluno);
     let cont = 0 ;
     let x = document.getElementsByTagName("IMG");
@@ -62,11 +62,10 @@ function enviar(){
             cont = cont + 1;
         }   
     }
-    ganhou();
-    perdeu()    
+    resultado();   
 }
 
-function ganhou(){
+function resultado(){
     let z = document.getElementsByClassName("letra");
     for(i=0;i<palavras[pos].length;i++){
         if(z[i].value == palavras[pos].slice(y,y + 1)){
@@ -86,10 +85,9 @@ function ganhou(){
         y = 0;
         seleção();
     }       
-}
-function perdeu(){
-    if(erros.length == palavras[pos].length){
-        alert("Você Perdeu :/") 
+    if(erros.length == 6){
+        alert("Você Perdeu :/")
+        alert("A palavra correta seria:" + " " + palavras[pos])
         erros = []
         document.getElementById("letras-erradas").innerHTML = erros;
         document.getElementById("pontuação").innerHTML = pontuação = pontuação - 1;
